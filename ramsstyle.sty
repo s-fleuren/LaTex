@@ -1,0 +1,63 @@
+\ProvidesPackage{ramsstyle}
+
+\usepackage[utf8]{inputenc} % This defines the font-encoding you prefer to use
+%\usepackage{fourier}
+\pagestyle{headings}
+\usepackage{marvosym}
+\usepackage[pdftex]{graphicx}
+%\usepackage[margin=2.5cm]{geometry}
+\usepackage{rotating}
+\usepackage{amsmath}
+\usepackage{booktabs}
+\usepackage{url}
+%\usepackage{natbib}
+\usepackage[numbers]{natbib} % Use this command if you want to refer to the literature by numbers, e.g., [1]
+\usepackage{setspace}
+\linespread{1.3}
+
+% Mijn standaard packages.
+\usepackage[a4paper]{geometry}
+\usepackage{amsmath}
+\usepackage[english]{babel}
+\usepackage{amssymb}
+%\usepackage{bm}
+%\usepackage{graphicx}
+\usepackage{float}
+%\usepackage{parskip}
+\usepackage{amsfonts}
+\usepackage{amsthm}
+\usepackage{caption}
+\usepackage{tipa}
+\usepackage{enumerate}
+%\usepackage[utf8]{inputenc}
+%\usepackage{natbib}
+%\usepackage{dsfont}
+\usepackage{color}
+%\usepackage{hyperref}
+
+\usepackage{listings}
+\lstset{
+	language=[Sharp]C,
+	basicstyle=\footnotesize
+}
+
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\theoremstyle{definition}
+\newtheorem{example}[theorem]{Example}
+
+
+\include{afkos}
+\usepackage{eurosym}
+%
+
+\newenvironment{remark}{\par\mbox{}\par\noindent{\bfseries \emph{Remark}\/}:\normalfont}{\par}
+\newenvironment{defin}{\par\mbox{}\par\noindent\bfseries \emph{\Pointinghand\ }\normalfont}{\par}
+\setcounter{tocdepth}{2} 
+\usepackage[colorlinks=true, pdfstartview=FitV,
+linkcolor=blue, citecolor=blue, urlcolor=blue]{hyperref}
+\pdfcompresslevel=9
