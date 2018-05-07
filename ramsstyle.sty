@@ -32,14 +32,20 @@
 %\usepackage[utf8]{inputenc}
 %\usepackage{natbib}
 %\usepackage{dsfont}
-\usepackage{color}
+%\usepackage{color}
+\usepackage[dvipsnames]{xcolor}
 %\usepackage{hyperref}
 \usepackage[e]{esvect} %\vv commands
 
 \usepackage{listings}
 \lstset{
-	language=[Sharp]C,
-	basicstyle=\footnotesize
+	language=C++,
+	%basicstyle=\footnotesize
+	basicstyle=\ttfamily,
+	keywordstyle=\color{blue}\ttfamily,
+	stringstyle=\color{red}\ttfamily,
+	commentstyle=\color{OliveGreen}\ttfamily,
+	morecomment=[l][\color{magenta}]{\#}
 }
 
 
@@ -60,5 +66,5 @@
 \newenvironment{defin}{\par\mbox{}\par\noindent\bfseries \emph{\Pointinghand\ }\normalfont}{\par}
 \setcounter{tocdepth}{2} 
 \usepackage[colorlinks=true, pdfstartview=FitV,
-linkcolor=blue, citecolor=blue, urlcolor=blue]{hyperref}
+linkcolor=black, citecolor=blue, urlcolor=blue]{hyperref}
 \pdfcompresslevel=9
